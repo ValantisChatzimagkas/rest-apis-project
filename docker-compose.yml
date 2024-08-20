@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    build: .  # from current directory use the Dockerfile to build this container
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app  # map contents of current directory and place them to /app inside the container and stay in sync
